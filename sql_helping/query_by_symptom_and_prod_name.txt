@@ -1,0 +1,4 @@
+SELECT  [2019Q4 All statins all AEs table no duplication].[prod_ai], [2019Q4 All statins all AEs table no duplication].[pt], count([2019Q4 All statins all AEs table no duplication].[pt]) as count_by_symptom
+FROM [2019Q4 All statins all AEs table no duplication]
+group by [2019Q4 All statins all AEs table no duplication].[prod_ai], [2019Q4 All statins all AEs table no duplication].[pt]
+having  [2019Q4 All statins all AEs table no duplication].[pt]="fatigue"  and   [2019Q4 All statins all AEs table no duplication].[prod_ai]="ATORVASTATIN";
