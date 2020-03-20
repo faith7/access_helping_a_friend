@@ -1,0 +1,5 @@
+SELECT [2019Q4 All statins all AEs table no duplication].[pt], [2019Q4 All statins all AEs table no duplication].age
+FROM [2019Q4 All statins all AEs table no duplication]
+WHERE [2019Q4 All statins all AEs table no duplication].[pt]="Fatigue" 
+and [2019Q4 All statins all AEs table no duplication].age is not null 
+and cdbl([2019Q4 All statins all AEs table no duplication].age)   < 100;

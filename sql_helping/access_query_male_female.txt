@@ -1,0 +1,19 @@
+1) male with fatigueness
+
+SELECT [2019Q4 All statins all AEs table no duplication].[pt], count([2019Q4 All statins all AEs table no duplication].[sex])
+FROM [2019Q4 All statins all AEs table no duplication]
+Group by [2019Q4 All statins all AEs table no duplication].[sex], [2019Q4 All statins all AEs table no duplication].[pt]
+Having ([2019Q4 All statins all AEs table no duplication].[sex])="M" and [2019Q4 All statins all AEs table no duplication].
+[pt]="Fatigue" ;
+
+
+2) female with fatigueness
+
+SELECT [2019Q4 All statins all AEs table no duplication].[pt], count([2019Q4 All statins all AEs table no duplication].[sex])
+FROM [2019Q4 All statins all AEs table no duplication]
+Group by [2019Q4 All statins all AEs table no duplication].[sex], [2019Q4 All statins all AEs table no duplication].[pt]
+Having ([2019Q4 All statins all AEs table no duplication].[sex])="F" and [2019Q4 All statins all AEs table no duplication].
+[pt]="Fatigue" ;
+
+
+

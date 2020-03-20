@@ -1,0 +1,5 @@
+SELECT  [2019Q4 All statins all AEs table no duplication].prod_ai,  [2019Q4 All statins all AEs table no duplication].rpsr_cod , count( [2019Q4 All statins all AEs table no duplication].rpsr_cod ) 
+FROM [2019Q4 All statins all AEs table no duplication]
+group by [2019Q4 All statins all AEs table no duplication].rpsr_cod,  [2019Q4 All statins all AEs table no duplication].prod_ai 
+Having  count( [2019Q4 All statins all AEs table no duplication].rpsr_cod ) 
+ORDER BY [2019Q4 All statins all AEs table no duplication].prod_ai;
