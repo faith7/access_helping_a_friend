@@ -1,0 +1,3 @@
+SELECT [2019Q4 All statins all AEs table no duplication].sex, count( [2019Q4 All statins all AEs table no duplication].sex)*100 /(select count(*) from [2019Q4 All statins all AEs table no duplication]) as total 
+from [2019Q4 All statins all AEs table no duplication]
+group by  [2019Q4 All statins all AEs table no duplication].sex ;
