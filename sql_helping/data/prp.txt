@@ -1,0 +1,10 @@
+df<- read.csv("C:\\Users\\g\\Desktop\\vba\\Sql\\sql_helping\\data\\fatigue_all.csv")
+head(df)
+tbl = table(df$Fatigue, df$Hepatic, df$Muscular, df$Musculars,df$Nervous)
+tbl
+cb<-cbind(tbl[,"Fatigue"], tbl[,"Hepatic"] + tbl[,"Muscular"]+tbl[,"Musculars"]+tbl[,"Nervous"]) 
+
+table(df$Fatigue,cf)
+chisq.test(df)
+
+

@@ -1,0 +1,9 @@
+
+df<- read.csv("C:\\Users\\g\\Desktop\\vba\\Sql\\sql_helping\\data\\allstat.csv")
+fit <- lm( Fatigue ~ Sex, data=df)
+summary(fit)
+
+coefficients(fit)
+anova(fit)
+vcov(fit) 
+plot(fit)
